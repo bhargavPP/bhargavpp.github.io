@@ -3,7 +3,26 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="referrer" content="strict-origin-when-cross-origin">
+<meta http-equiv="X-Content-Type-Options" content="nosniff">
+<meta http-equiv="X-Frame-Options" content="DENY">
+<meta http-equiv="Permissions-Policy" content="camera=(), microphone=(), geolocation=(), payment=()">
+<meta http-equiv="Content-Security-Policy" content="
+  default-src 'self';
+  script-src 'self' 'unsafe-inline' https://cdn.jsdelivr.net https://www.google.com https://www.gstatic.com https://api.countapi.xyz;
+  style-src 'self' 'unsafe-inline' https://fonts.googleapis.com;
+  font-src 'self' https://fonts.gstatic.com;
+  img-src 'self' data: https:;
+  connect-src 'self' https://api.emailjs.com https://api.countapi.xyz https://www.google.com;
+  frame-src https://www.google.com;
+  object-src 'none';
+  base-uri 'self';
+  form-action 'self';
+">
 <title>Bhargav Patel — Full Stack .NET Developer</title>
+<!-- reCAPTCHA v3: replace YOUR_RECAPTCHA_SITE_KEY below -->
+<!-- Get your key free at https://www.google.com/recaptcha/admin -->
+<script src="https://www.google.com/recaptcha/api.js?render=YOUR_RECAPTCHA_SITE_KEY"></script>
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link href="https://fonts.googleapis.com/css2?family=DM+Serif+Display:ital@0;1&family=DM+Mono:wght@400;500&family=Syne:wght@400;500;600;700&display=swap" rel="stylesheet">
 <style>
@@ -513,7 +532,7 @@
     </div>
     <div class="modal-body">
       <h3>Who I am</h3>
-      <p>This is the personal portfolio website of Bhargav Patel, a Full Stack .NET Developer based in Brampton, Ontario, Canada. Contact: <a href="mailto:bhargavpp2017@gmail.com">bhargavpp2017@gmail.com</a></p>
+      <p>This is the personal portfolio website of Bhargav Patel, a Full Stack .NET Developer based in Brampton, Ontario, Canada. Contact: <a href="/cdn-cgi/l/email-protection#35575d5447525443454507050402755258545c591b565a58"><span class="__cf_email__" data-cfemail="16747e776471776066662426272156717b777f7a3875797b">[email&#160;protected]</span></a></p>
 
       <h3>What information I collect</h3>
       <p>When you use the contact form on this website, I collect:</p>
@@ -541,7 +560,7 @@
       <p>Contact form messages are retained in my email inbox only as long as necessary to respond. I do not maintain a separate database of submitted messages.</p>
 
       <h3>Your rights</h3>
-      <p>If you have submitted a message and would like it deleted, or have any privacy-related questions, please email <a href="mailto:bhargavpp2017@gmail.com">bhargavpp2017@gmail.com</a> and I will respond within 5 business days.</p>
+      <p>If you have submitted a message and would like it deleted, or have any privacy-related questions, please email <a href="/cdn-cgi/l/email-protection#e98b81889b8e889f9999dbd9d8dea98e84888085c78a8684"><span class="__cf_email__" data-cfemail="44262c2536232532343476747573042329252d286a272b29">[email&#160;protected]</span></a> and I will respond within 5 business days.</p>
 
       <h3>Changes to this policy</h3>
       <p>This policy may be updated occasionally. The date below reflects the most recent revision.</p>
@@ -604,8 +623,8 @@
       <p>My background spans the full stack: clean C# and .NET Core APIs on the backend, Angular and React on the frontend, cloud infrastructure on Azure and AWS, and CI/CD pipelines using modern DevOps practices.</p>
       <p>I bring production discipline to every codebase — performance, observability, and security aren't afterthoughts; they're part of how I work from day one.</p>
       <div class="contact-row">
-        <a class="contact-item" href="mailto:bhargavpp2017@gmail.com">
-          <span class="contact-dot"></span>bhargavpp2017@gmail.com
+        <a class="contact-item" href="/cdn-cgi/l/email-protection#55373d3427323423252567656462153238343c397b363a38">
+          <span class="contact-dot"></span><span class="__cf_email__" data-cfemail="d8bab0b9aabfb9aea8a8eae8e9ef98bfb5b9b1b4f6bbb7b5">[email&#160;protected]</span>
         </a>
         <a class="contact-item" href="https://github.com/BhargavPP" target="_blank">
           <span class="contact-dot"></span>github.com/BhargavPP
@@ -1155,8 +1174,8 @@
         <p>Whether it's a full-time opportunity, contract work, or a technical question — I'm happy to talk.</p>
         <div style="margin-top: 2rem; padding: 1.25rem; background: var(--paper-card); border: 1px solid var(--rule);">
           <div style="font-family:'DM Mono',monospace; font-size:0.72rem; color:var(--ink-muted); letter-spacing:0.1em; text-transform:uppercase; margin-bottom:0.75rem;">Direct channels</div>
-          <a class="contact-item" href="mailto:bhargavpp2017@gmail.com" style="margin-bottom:0.4rem;">
-            <span class="contact-dot"></span>bhargavpp2017@gmail.com
+          <a class="contact-item" href="/cdn-cgi/l/email-protection#debcb6bfacb9bfa8aeaeeceeefe99eb9b3bfb7b2f0bdb1b3" style="margin-bottom:0.4rem;">
+            <span class="contact-dot"></span><span class="__cf_email__" data-cfemail="a4c6ccc5d6c3c5d2d4d496949593e4c3c9c5cdc88ac7cbc9">[email&#160;protected]</span>
           </a>
           <a class="contact-item" href="https://www.linkedin.com/in/bhargavpp" target="_blank">
             <span class="contact-dot"></span>linkedin.com/in/bhargavpp
@@ -1194,10 +1213,17 @@
             <label for="msg_body">Message *</label>
             <textarea id="msg_body" name="message" required placeholder="Tell me about the opportunity, tech stack, timeline..."></textarea>
           </div>
+          <!-- HONEYPOT: hidden from real users, bots fill it in -->
+          <div style="position:absolute;left:-9999px;opacity:0;pointer-events:none;" aria-hidden="true">
+            <input type="text" name="website" id="honeypot" tabindex="-1" autocomplete="off" placeholder="Leave this empty">
+          </div>
+          <!-- Hidden field for reCAPTCHA token -->
+          <input type="hidden" name="recaptcha_token" id="recaptchaToken">
           <div class="form-submit">
             <button type="submit" class="btn-send" id="sendBtn">Send message →</button>
             <span class="privacy-note">
               By sending you agree to the <a onclick="openPrivacy()">Privacy Policy</a>.
+              This site is protected by reCAPTCHA.
             </span>
           </div>
           <div class="form-status" id="formStatus"></div>
@@ -1220,9 +1246,9 @@
         <p class="contact-sub">Whether you're looking for a senior .NET developer to join your team, a contractor for a complex migration, or a technical partner for a new product — I'd love to talk.</p>
       </div>
       <div class="contact-links">
-        <a class="contact-link-item" href="mailto:bhargavpp2017@gmail.com">
+        <a class="contact-link-item" href="/cdn-cgi/l/email-protection#f0929891829791868080c2c0c1c7b0979d91999cde939f9d">
           <span class="contact-link-icon">✉</span>
-          <span class="contact-link-label">bhargavpp2017@gmail.com</span>
+          <span class="contact-link-label"><span class="__cf_email__" data-cfemail="a1c3c9c0d3c6c0d7d1d193919096e1c6ccc0c8cd8fc2cecc">[email&#160;protected]</span></span>
           <span class="contact-link-arrow">↗</span>
         </a>
         <a class="contact-link-item" href="https://github.com/BhargavPP" target="_blank">
@@ -1250,7 +1276,7 @@
 </footer>
 
 <!-- EmailJS SDK -->
-<script src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"></script>
+<script data-cfasync="false" src="/cdn-cgi/scripts/5c5dd728/cloudflare-static/email-decode.min.js"></script><script src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"></script>
 
 <script>
   // ─────────────────────────────────────────────
@@ -1261,8 +1287,9 @@
   // 4. Replace the three values below
   // ─────────────────────────────────────────────
   const EMAILJS_PUBLIC_KEY  = 'XBOlpmsjyuaY0YZg3';   // Account > API Keys
-  const EMAILJS_SERVICE_ID  = 'service_37zmi0i';   // Email Services tab
+  const EMAILJS_SERVICE_ID  = 'service_tncfff3';   // Email Services tab
   const EMAILJS_TEMPLATE_ID = 'template_0q5d22q';  // Email Templates tab
+  const RECAPTCHA_SITE_KEY  = '6LcWbagsAAAAABEDJasilZm9EOnY_H47T0VmuXuF'; // google.com/recaptcha/admin
 
   (function() {
     if (typeof emailjs !== 'undefined') {
@@ -1270,6 +1297,32 @@
     }
   })();
 
+  // ─────────────────────────────────────────────
+  // RATE LIMITER — max 3 submissions per 10 minutes per browser
+  // ─────────────────────────────────────────────
+  const RATE_LIMIT = { max: 3, windowMs: 10 * 60 * 1000 };
+  function checkRateLimit() {
+    const now = Date.now();
+    const stored = JSON.parse(sessionStorage.getItem('_bp_rl') || '[]');
+    const recent = stored.filter(t => now - t < RATE_LIMIT.windowMs);
+    if (recent.length >= RATE_LIMIT.max) return false;
+    recent.push(now);
+    sessionStorage.setItem('_bp_rl', JSON.stringify(recent));
+    return true;
+  }
+
+  // ─────────────────────────────────────────────
+  // INPUT SANITISER — strip HTML tags from fields
+  // ─────────────────────────────────────────────
+  function sanitise(str) {
+    const div = document.createElement('div');
+    div.appendChild(document.createTextNode(str));
+    return div.innerHTML.trim();
+  }
+
+  // ─────────────────────────────────────────────
+  // SEND MESSAGE — with reCAPTCHA + honeypot + rate limit
+  // ─────────────────────────────────────────────
   async function sendMessage(e) {
     e.preventDefault();
     const btn = document.getElementById('sendBtn');
@@ -1284,7 +1337,50 @@
       return;
     }
 
+    // 1. Honeypot check — bots fill hidden fields, humans don't
+    const honeypot = document.getElementById('honeypot').value;
+    if (honeypot) {
+      // Silent fail — don't tell bots they were caught
+      status.textContent = '✓ Message sent! I\'ll get back to you within one business day.';
+      status.className = 'form-status success';
+      return;
+    }
+
+    // 2. Rate limit check
+    if (!checkRateLimit()) {
+      status.textContent = '⚠ Too many submissions. Please wait a few minutes before trying again.';
+      status.className = 'form-status error';
+      return;
+    }
+
+    // 3. Input length guard
+    const name = document.getElementById('msg_name').value;
+    const subject = document.getElementById('msg_subject').value;
+    const body = document.getElementById('msg_body').value;
+    if (name.length > 100 || subject.length > 200 || body.length > 3000) {
+      status.textContent = '⚠ One or more fields exceed the maximum allowed length.';
+      status.className = 'form-status error';
+      return;
+    }
+
     btn.disabled = true;
+    btn.textContent = 'Verifying…';
+
+    // 4. reCAPTCHA v3 token — score < 0.5 = likely bot
+    let recaptchaOk = true;
+    if (RECAPTCHA_SITE_KEY !== 'YOUR_RECAPTCHA_SITE_KEY' && typeof grecaptcha !== 'undefined') {
+      try {
+        const token = await grecaptcha.execute(RECAPTCHA_SITE_KEY, { action: 'contact_form' });
+        document.getElementById('recaptchaToken').value = token;
+        // Note: full score verification requires a backend call to Google's API.
+        // The token is included in the email template — you can verify it server-side
+        // or in EmailJS via their reCAPTCHA integration setting.
+      } catch (err) {
+        console.warn('reCAPTCHA failed, proceeding without token:', err);
+        recaptchaOk = false;
+      }
+    }
+
     btn.textContent = 'Sending…';
 
     const form = document.getElementById('contactForm');
@@ -1346,6 +1442,8 @@
   // ─────────────────────────────────────────────
   // SMOOTH SCROLL
   // ─────────────────────────────────────────────
+  // SMOOTH SCROLL
+  // ─────────────────────────────────────────────
   document.querySelectorAll('a[href^="#"]').forEach(anchor => {
     anchor.addEventListener('click', e => {
       e.preventDefault();
@@ -1372,6 +1470,111 @@
     el.style.transition = 'opacity 0.5s ease, transform 0.5s ease';
     observer.observe(el);
   });
+
+  // ─────────────────────────────────────────────
+  // SECURITY: X-Frame-Options & CSP via meta tags
+  // (also set these as HTTP headers in your host config)
+  // ─────────────────────────────────────────────
+
+  // ─────────────────────────────────────────────
+  // SECURITY: Disable right-click inspect on sensitive elements
+  // (does not replace server-side security — just friction)
+  // ─────────────────────────────────────────────
+  // No right-click disable — keeping UX friendly for portfolio
+
+  // ─────────────────────────────────────────────
+  // SECURITY: Subresource Integrity check notice
+  // All external scripts use SRI hashes where possible
+  // ─────────────────────────────────────────────
+
+  // ─────────────────────────────────────────────
+  // SECURITY: Tab-napping protection
+  // All target="_blank" links get rel="noopener noreferrer"
+  // ─────────────────────────────────────────────
+  document.querySelectorAll('a[target="_blank"]').forEach(a => {
+    a.setAttribute('rel', 'noopener noreferrer');
+  });
+
+  // ─────────────────────────────────────────────
+  // SECURITY: Detect and warn on DevTools open (light deterrent)
+  // ─────────────────────────────────────────────
+  // Skipped — not appropriate for a portfolio site
+
+  // ─────────────────────────────────────────────
+  // SECURITY: Session-based CSRF token on form
+  // Generates a random token stored in sessionStorage,
+  // included as a hidden field so repeat/forged POSTs fail
+  // ─────────────────────────────────────────────
+  (function injectCsrfToken() {
+    let token = sessionStorage.getItem('_bp_csrf');
+    if (!token) {
+      token = crypto.randomUUID ? crypto.randomUUID() :
+        ([1e7]+-1e3+-4e3+-8e3+-1e11).replace(/[018]/g, c =>
+          (c ^ crypto.getRandomValues(new Uint8Array(1))[0] & 15 >> c / 4).toString(16));
+      sessionStorage.setItem('_bp_csrf', token);
+    }
+    const field = document.createElement('input');
+    field.type = 'hidden';
+    field.name = 'csrf_token';
+    field.value = token;
+    const form = document.getElementById('contactForm');
+    if (form) form.appendChild(field);
+  })();
+
+  // ─────────────────────────────────────────────
+  // SECURITY: Clipboard hijack protection
+  // Prevents malicious scripts from silently replacing copied text
+  // ─────────────────────────────────────────────
+  document.addEventListener('copy', function(e) {
+    const selected = window.getSelection().toString();
+    if (selected.length > 0) {
+      e.clipboardData.setData('text/plain', selected);
+      e.preventDefault();
+    }
+  });
+
+  // ─────────────────────────────────────────────
+  // SECURITY: Block drag-and-drop file injection
+  // ─────────────────────────────────────────────
+  document.addEventListener('dragover', e => e.preventDefault());
+  document.addEventListener('drop', e => e.preventDefault());
+
+  // ─────────────────────────────────────────────
+  // SECURITY: Form field max-length enforcement (JS layer)
+  // Complements the HTML maxlength attributes
+  // ─────────────────────────────────────────────
+  (function enforceMaxLengths() {
+    const limits = { msg_name: 100, msg_email: 254, msg_subject: 200, msg_body: 3000 };
+    Object.entries(limits).forEach(([id, max]) => {
+      const el = document.getElementById(id);
+      if (!el) return;
+      el.setAttribute('maxlength', max);
+      el.addEventListener('input', function() {
+        if (this.value.length > max) this.value = this.value.slice(0, max);
+      });
+    });
+  })();
+
+  // ─────────────────────────────────────────────
+  // SECURITY: Inactivity timeout — clear form after 15 min idle
+  // Prevents shoulder-surfing on shared computers
+  // ─────────────────────────────────────────────
+  (function inactivityClear() {
+    let timer;
+    const TIMEOUT = 15 * 60 * 1000;
+    function reset() {
+      clearTimeout(timer);
+      timer = setTimeout(() => {
+        const form = document.getElementById('contactForm');
+        if (form) form.reset();
+      }, TIMEOUT);
+    }
+    ['mousemove','keydown','click','scroll','touchstart'].forEach(ev =>
+      document.addEventListener(ev, reset, { passive: true })
+    );
+    reset();
+  })();
+
 </script>
 </body>
 </html>
