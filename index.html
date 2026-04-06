@@ -5,16 +5,14 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <meta name="referrer" content="strict-origin-when-cross-origin">
 <meta http-equiv="X-Content-Type-Options" content="nosniff">
-<!-- NOTE: X-Frame-Options CANNOT be set via meta tag — must be an HTTP header.
-     For GitHub Pages, add a _headers file (Netlify) or use the CSP frame-ancestors
-     directive below, which IS supported via meta and achieves the same protection. -->
 <meta http-equiv="Content-Security-Policy" content="frame-ancestors 'none'; object-src 'none'; base-uri 'self'; form-action 'self';">
+<meta property="og:title" content="Bhargav Patel — Full Stack .NET Developer">
+<meta property="og:description" content="14+ years building enterprise systems. Available for full-time, contract & freelance work.">
+<meta property="og:type" content="website">
+<meta property="og:url" content="https://bhargavpp.github.io">
+<meta name="twitter:card" content="summary">
 <title>Bhargav Patel — Full Stack .NET Developer</title>
-<!-- Inline favicon — no external file needed, eliminates the 404 -->
 <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'><rect width='32' height='32' fill='%231a4c8c'/><text x='50%25' y='54%25' dominant-baseline='middle' text-anchor='middle' font-family='serif' font-size='18' font-weight='bold' fill='white'>BP</text></svg>">
-<!-- reCAPTCHA v3: replace YOUR_RECAPTCHA_SITE_KEY below -->
-<!-- Get your key free at https://www.google.com/recaptcha/admin -->
-<script src="https://www.google.com/recaptcha/api.js?render=YOUR_RECAPTCHA_SITE_KEY"></script>
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link href="https://fonts.googleapis.com/css2?family=DM+Serif+Display:ital@0;1&family=DM+Mono:wght@400;500&family=Syne:wght@400;500;600;700&display=swap" rel="stylesheet">
 <style>
@@ -56,15 +54,13 @@
   .nav-logo {
     font-family: 'DM Serif Display', serif;
     font-size: 1.1rem; letter-spacing: 0.02em;
-    color: var(--ink);
-    text-decoration: none;
+    color: var(--ink); text-decoration: none;
   }
   .nav-links { display: flex; gap: 2rem; list-style: none; }
   .nav-links a {
     text-decoration: none; font-size: 0.82rem; font-weight: 500;
     letter-spacing: 0.08em; text-transform: uppercase;
-    color: var(--ink-soft);
-    transition: color 0.2s;
+    color: var(--ink-soft); transition: color 0.2s;
   }
   .nav-links a:hover { color: var(--accent); }
 
@@ -84,15 +80,13 @@
     animation: pulse-dot 2s infinite;
   }
   @keyframes pulse-dot {
-    0%, 100% { opacity: 1; }
-    50% { opacity: 0.3; }
+    0%, 100% { opacity: 1; } 50% { opacity: 0.3; }
   }
 
   /* ── HERO ── */
   .hero {
     min-height: 100vh;
-    display: grid;
-    grid-template-columns: 1fr 1fr;
+    display: grid; grid-template-columns: 1fr 1fr;
     padding-top: 60px;
   }
   .hero-left {
@@ -108,10 +102,8 @@
   .hero-name {
     font-family: 'DM Serif Display', serif;
     font-size: clamp(3.5rem, 6vw, 5.5rem);
-    line-height: 1.0;
-    letter-spacing: -0.02em;
-    color: var(--ink);
-    margin-bottom: 1.5rem;
+    line-height: 1.0; letter-spacing: -0.02em;
+    color: var(--ink); margin-bottom: 1.5rem;
   }
   .hero-title {
     font-size: 1.15rem; font-weight: 500;
@@ -167,8 +159,7 @@
   }
   .about-block { position: relative; z-index: 1; }
   .about-block p {
-    color: var(--ink-soft); line-height: 1.8; margin-bottom: 1.25rem;
-    font-size: 1rem;
+    color: var(--ink-soft); line-height: 1.8; margin-bottom: 1.25rem; font-size: 1rem;
   }
   .contact-row {
     display: flex; flex-direction: column; gap: 0.5rem; margin-top: 2rem;
@@ -194,8 +185,7 @@
   }
   .section-num {
     font-family: 'DM Mono', monospace;
-    font-size: 0.75rem; color: var(--ink-muted);
-    letter-spacing: 0.1em;
+    font-size: 0.75rem; color: var(--ink-muted); letter-spacing: 0.1em;
   }
   .section-title {
     font-family: 'DM Serif Display', serif;
@@ -207,9 +197,7 @@
   .exp-grid { display: flex; flex-direction: column; gap: 0; }
   .exp-item {
     display: grid; grid-template-columns: 200px 1fr;
-    border-bottom: 1px solid var(--rule);
-    padding: 2rem 0;
-    transition: background 0.2s;
+    border-bottom: 1px solid var(--rule); padding: 2rem 0;
   }
   .exp-item:last-child { border-bottom: none; }
   .exp-meta { padding-right: 2rem; }
@@ -247,8 +235,7 @@
   /* ── SKILLS ── */
   #skills { background: var(--paper-warm); }
   .skills-grid {
-    display: grid; grid-template-columns: repeat(auto-fill, minmax(260px, 1fr));
-    gap: 1.5rem;
+    display: grid; grid-template-columns: repeat(auto-fill, minmax(260px, 1fr)); gap: 1.5rem;
   }
   .skill-card {
     background: var(--paper-card); border: 1px solid var(--rule); padding: 1.5rem;
@@ -270,8 +257,7 @@
   /* ── PROJECTS ── */
   #projects { background: var(--paper); }
   .projects-grid {
-    display: grid; grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
-    gap: 1.5rem;
+    display: grid; grid-template-columns: repeat(auto-fill, minmax(280px, 1fr)); gap: 1.5rem;
   }
   .project-card {
     background: var(--paper-card); border: 1px solid var(--rule);
@@ -303,7 +289,7 @@
   .project-mockup {
     margin: -1.5rem -1.5rem 1.25rem;
     border-bottom: 1px solid var(--rule);
-    overflow: hidden; border-radius: 4px 4px 0 0; line-height: 0;
+    overflow: hidden; line-height: 0;
   }
 
   /* ── ACHIEVEMENTS ── */
@@ -336,7 +322,7 @@
   .edu-institution { font-size: 0.85rem; color: var(--ink-soft); margin-bottom: 0.3rem; }
   .edu-period { font-family: 'DM Mono', monospace; font-size: 0.75rem; color: var(--ink-muted); }
 
-  /* ── CONTACT SECTION ── */
+  /* ── CONTACT ── */
   #contact { background: var(--ink); color: var(--paper); }
   #contact .section-title { color: var(--paper); }
   #contact .section-num { color: rgba(255,255,255,0.35); }
@@ -355,12 +341,15 @@
     padding: 1rem 1.25rem; border: 1px solid rgba(255,255,255,0.1);
     transition: all 0.2s;
   }
-  .contact-link-item:hover { background: rgba(255,255,255,0.05); color: #fff; border-color: rgba(255,255,255,0.25); }
+  .contact-link-item:hover {
+    background: rgba(255,255,255,0.05); color: #fff;
+    border-color: rgba(255,255,255,0.25);
+  }
   .contact-link-icon { width: 20px; font-size: 1rem; text-align: center; flex-shrink: 0; }
   .contact-link-label { flex: 1; }
   .contact-link-arrow { color: rgba(255,255,255,0.3); }
 
-  /* ── SEND MESSAGE FORM ── */
+  /* ── MESSAGE FORM ── */
   #message { background: var(--paper-warm); }
   .message-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 3rem; align-items: start; }
   .message-intro p { color: var(--ink-soft); line-height: 1.8; margin-bottom: 1rem; font-size: 0.95rem; }
@@ -374,40 +363,29 @@
   .form-field input,
   .form-field textarea,
   .form-field select {
-    background: var(--paper-card);
-    border: 1px solid var(--rule);
-    padding: 0.7rem 1rem;
-    font-family: 'Syne', sans-serif;
-    font-size: 0.9rem; color: var(--ink);
-    outline: none; transition: border-color 0.2s;
-    border-radius: 0;
-    width: 100%;
-    resize: vertical;
+    background: var(--paper-card); border: 1px solid var(--rule);
+    padding: 0.7rem 1rem; font-family: 'Syne', sans-serif;
+    font-size: 0.9rem; color: var(--ink); outline: none;
+    transition: border-color 0.2s; border-radius: 0; width: 100%; resize: vertical;
   }
   .form-field input:focus,
   .form-field textarea:focus { border-color: var(--accent); }
   .form-field textarea { min-height: 120px; }
-  .form-submit {
-    display: flex; align-items: center; gap: 1rem; flex-wrap: wrap;
-  }
+  .form-submit { display: flex; align-items: center; gap: 1rem; flex-wrap: wrap; }
   .btn-send {
-    padding: 0.8rem 2rem;
-    background: var(--accent); color: #fff;
-    border: none; cursor: pointer;
-    font-family: 'Syne', sans-serif;
-    font-size: 0.85rem; font-weight: 600;
-    letter-spacing: 0.05em;
+    padding: 0.8rem 2rem; background: var(--accent); color: #fff;
+    border: none; cursor: pointer; font-family: 'Syne', sans-serif;
+    font-size: 0.85rem; font-weight: 600; letter-spacing: 0.05em;
     transition: background 0.2s, transform 0.15s;
   }
   .btn-send:hover:not(:disabled) { background: #0d3570; transform: translateY(-1px); }
   .btn-send:disabled { opacity: 0.6; cursor: not-allowed; }
   .form-status {
-    font-family: 'DM Mono', monospace;
-    font-size: 0.8rem; padding: 0.5rem 0.75rem;
-    display: none;
+    font-family: 'DM Mono', monospace; font-size: 0.8rem;
+    padding: 0.5rem 0.75rem; display: none;
   }
   .form-status.success { background: #e6f9f0; color: #0a6640; border: 1px solid #b7e8d0; display: block; }
-  .form-status.error { background: #fce8e8; color: #9b1c1c; border: 1px solid #f5b7b7; display: block; }
+  .form-status.error   { background: #fce8e8; color: #9b1c1c; border: 1px solid #f5b7b7; display: block; }
   .privacy-note {
     font-size: 0.75rem; color: var(--ink-muted);
     font-family: 'DM Mono', monospace;
@@ -419,70 +397,50 @@
     position: fixed; inset: 0; z-index: 999;
     background: rgba(0,0,0,0.65);
     display: flex; align-items: center; justify-content: center;
-    padding: 2rem;
-    opacity: 0; pointer-events: none;
-    transition: opacity 0.25s;
+    padding: 2rem; opacity: 0; pointer-events: none; transition: opacity 0.25s;
   }
   .modal-overlay.open { opacity: 1; pointer-events: all; }
   .modal-box {
-    background: var(--paper-card);
-    max-width: 680px; width: 100%;
-    max-height: 85vh;
-    overflow-y: auto;
-    border: 1px solid var(--rule);
-    transform: translateY(20px);
-    transition: transform 0.25s;
+    background: var(--paper-card); max-width: 680px; width: 100%;
+    max-height: 85vh; overflow-y: auto; border: 1px solid var(--rule);
+    transform: translateY(20px); transition: transform 0.25s;
   }
   .modal-overlay.open .modal-box { transform: translateY(0); }
   .modal-header {
-    padding: 1.5rem 2rem;
-    border-bottom: 1px solid var(--rule);
+    padding: 1.5rem 2rem; border-bottom: 1px solid var(--rule);
     display: flex; align-items: center; justify-content: space-between;
     position: sticky; top: 0; background: var(--paper-card); z-index: 1;
   }
-  .modal-title {
-    font-family: 'DM Serif Display', serif;
-    font-size: 1.4rem; color: var(--ink);
-  }
+  .modal-title { font-family: 'DM Serif Display', serif; font-size: 1.4rem; color: var(--ink); }
   .modal-close {
     background: none; border: none; cursor: pointer;
-    font-size: 1.4rem; color: var(--ink-muted);
-    line-height: 1; padding: 0.25rem;
-    transition: color 0.2s;
+    font-size: 1.4rem; color: var(--ink-muted); line-height: 1;
+    padding: 0.25rem; transition: color 0.2s;
   }
   .modal-close:hover { color: var(--ink); }
   .modal-body { padding: 2rem; }
   .modal-body h3 {
     font-family: 'DM Serif Display', serif;
-    font-size: 1.05rem; color: var(--ink);
-    margin: 1.5rem 0 0.5rem;
+    font-size: 1.05rem; color: var(--ink); margin: 1.5rem 0 0.5rem;
   }
   .modal-body h3:first-child { margin-top: 0; }
-  .modal-body p {
-    font-size: 0.88rem; color: var(--ink-soft); line-height: 1.75;
-    margin-bottom: 0.75rem;
-  }
-  .modal-body ul {
-    list-style: none; padding: 0; margin-bottom: 0.75rem;
-  }
+  .modal-body p { font-size: 0.88rem; color: var(--ink-soft); line-height: 1.75; margin-bottom: 0.75rem; }
+  .modal-body ul { list-style: none; padding: 0; margin-bottom: 0.75rem; }
   .modal-body ul li {
     font-size: 0.88rem; color: var(--ink-soft); line-height: 1.7;
     padding-left: 1rem; position: relative; margin-bottom: 0.25rem;
   }
   .modal-body ul li::before { content: '—'; position: absolute; left: 0; color: var(--rule); }
   .modal-updated {
-    font-family: 'DM Mono', monospace;
-    font-size: 0.72rem; color: var(--ink-muted);
-    margin-top: 2rem; padding-top: 1rem;
-    border-top: 1px solid var(--rule);
+    font-family: 'DM Mono', monospace; font-size: 0.72rem; color: var(--ink-muted);
+    margin-top: 2rem; padding-top: 1rem; border-top: 1px solid var(--rule);
   }
 
   /* ── FOOTER ── */
   footer {
     background: #060606; color: rgba(255,255,255,0.3);
     text-align: center; padding: 1.5rem;
-    font-family: 'DM Mono', monospace; font-size: 0.72rem;
-    letter-spacing: 0.08em;
+    font-family: 'DM Mono', monospace; font-size: 0.72rem; letter-spacing: 0.08em;
   }
   .footer-inner {
     display: flex; align-items: center; justify-content: center;
@@ -493,7 +451,200 @@
     cursor: pointer; transition: color 0.2s;
   }
   .footer-privacy:hover { color: rgba(255,255,255,0.7); }
-  .footer-sep { color: rgba(255,255,255,0.15); }
+
+  /* ════════════════════════════════════════
+     CHAT WIDGET STYLES
+  ════════════════════════════════════════ */
+  #bp-chat-fab {
+    position: fixed; bottom: 2rem; right: 2rem; z-index: 9999;
+    display: flex; flex-direction: column; align-items: flex-end; gap: 0.75rem;
+  }
+  #bp-chat-btn {
+    width: 56px; height: 56px; background: #1a4c8c;
+    border: none; cursor: pointer;
+    display: flex; align-items: center; justify-content: center;
+    box-shadow: 0 4px 20px rgba(26,76,140,0.35);
+    transition: background 0.2s, transform 0.15s, box-shadow 0.2s;
+    position: relative; border-radius: 0;
+  }
+  #bp-chat-btn:hover {
+    background: #0d3570; transform: translateY(-2px);
+    box-shadow: 0 8px 28px rgba(26,76,140,0.45);
+  }
+  #bp-chat-btn svg { width: 24px; height: 24px; }
+  #bp-chat-btn .close-icon { display: none; }
+  #bp-chat-btn.open .chat-icon { display: none; }
+  #bp-chat-btn.open .close-icon { display: block; }
+  #bp-chat-unread {
+    position: absolute; top: -4px; right: -4px;
+    width: 12px; height: 12px; border-radius: 50%;
+    background: #c84b00; border: 2px solid #f8f5f0;
+    animation: bp-pulse-unread 2s infinite; display: none;
+  }
+  @keyframes bp-pulse-unread {
+    0%,100% { transform: scale(1); } 50% { transform: scale(1.25); }
+  }
+  #bp-chat-window {
+    width: 380px; background: #f8f5f0; border: 1px solid #d8d0c4;
+    display: flex; flex-direction: column;
+    box-shadow: 0 12px 48px rgba(0,0,0,0.18);
+    opacity: 0; transform: translateY(12px) scale(0.97);
+    pointer-events: none;
+    transition: opacity 0.22s ease, transform 0.22s ease;
+    max-height: 560px; position: relative; overflow: hidden;
+  }
+  #bp-chat-window.open {
+    opacity: 1; transform: translateY(0) scale(1); pointer-events: all;
+  }
+  #bp-chat-header {
+    background: #1a4c8c; padding: 1rem 1.25rem;
+    display: flex; align-items: center; flex-shrink: 0;
+  }
+  .bp-chat-avatar {
+    width: 36px; height: 36px; background: rgba(255,255,255,0.15);
+    display: flex; align-items: center; justify-content: center;
+    font-family: 'DM Serif Display', Georgia, serif;
+    font-size: 0.9rem; color: #fff; flex-shrink: 0; margin-right: 0.75rem;
+  }
+  .bp-chat-header-name {
+    font-family: 'Syne', sans-serif;
+    font-size: 0.88rem; font-weight: 600; color: #fff; line-height: 1.2;
+  }
+  .bp-chat-header-status {
+    font-family: 'DM Mono', monospace;
+    font-size: 0.65rem; color: rgba(255,255,255,0.65);
+    display: flex; align-items: center; gap: 0.35rem; margin-top: 1px;
+  }
+  .bp-status-dot {
+    width: 5px; height: 5px; border-radius: 50%; background: #10b981;
+    animation: bp-pulse-dot 2s infinite;
+  }
+  @keyframes bp-pulse-dot { 0%,100%{opacity:1} 50%{opacity:0.3} }
+
+  /* Setup overlay */
+  #bp-api-setup {
+    position: absolute; inset: 0; background: #f8f5f0;
+    display: flex; flex-direction: column; padding: 1.5rem; z-index: 10;
+    overflow-y: auto;
+  }
+  #bp-api-setup h3 {
+    font-family: 'DM Serif Display', Georgia, serif;
+    font-size: 1.2rem; color: #0d0d0d; margin-bottom: 0.5rem;
+  }
+  #bp-api-setup p {
+    font-family: 'Syne', sans-serif;
+    font-size: 0.8rem; color: #3a3a3a; line-height: 1.6; margin-bottom: 1rem;
+  }
+  #bp-api-setup a { color: #1a4c8c; }
+  .bp-setup-badge {
+    display: flex; align-items: center; gap: 0.4rem;
+    font-family: 'DM Mono', monospace; font-size: 0.65rem; color: #3a3a3a;
+    background: #efe9df; border: 1px solid #d8d0c4;
+    padding: 0.4rem 0.6rem; margin-bottom: 1rem;
+  }
+  #bp-api-key-input {
+    font-family: 'DM Mono', monospace; font-size: 0.78rem; color: #0d0d0d;
+    background: #fff; border: 1px solid #d8d0c4;
+    padding: 0.6rem 0.75rem; outline: none; width: 100%;
+    transition: border-color 0.2s; margin-bottom: 0.75rem; border-radius: 0;
+  }
+  #bp-api-key-input:focus { border-color: #1a4c8c; }
+  #bp-api-key-save {
+    width: 100%; padding: 0.7rem; background: #1a4c8c; color: #fff;
+    border: none; cursor: pointer; font-family: 'Syne', sans-serif;
+    font-size: 0.85rem; font-weight: 600; transition: background 0.2s; border-radius: 0;
+  }
+  #bp-api-key-save:hover { background: #0d3570; }
+  .bp-setup-note {
+    font-family: 'DM Mono', monospace;
+    font-size: 0.65rem; color: #aaa; margin-top: 0.75rem; line-height: 1.6;
+  }
+
+  /* Suggestions */
+  #bp-suggestions {
+    padding: 0.875rem 1rem 0; flex-shrink: 0;
+    border-bottom: 1px solid #d8d0c4; background: #efe9df;
+  }
+  .bp-suggestions-label {
+    font-family: 'DM Mono', monospace; font-size: 0.62rem;
+    letter-spacing: 0.1em; text-transform: uppercase; color: #777; margin-bottom: 0.5rem;
+  }
+  .bp-suggestions-list { display: flex; flex-wrap: wrap; gap: 0.4rem; padding-bottom: 0.875rem; }
+  .bp-chip {
+    background: #fff; border: 1px solid #d8d0c4;
+    font-family: 'Syne', sans-serif; font-size: 0.72rem; color: #1a4c8c;
+    padding: 0.3rem 0.65rem; cursor: pointer; border-radius: 0;
+    transition: background 0.15s, border-color 0.15s, transform 0.1s; line-height: 1.3;
+  }
+  .bp-chip:hover { background: #e8f0fb; border-color: #1a4c8c; transform: translateY(-1px); }
+
+  /* Messages */
+  #bp-chat-messages {
+    flex: 1; overflow-y: auto; padding: 1rem;
+    display: flex; flex-direction: column; gap: 0.75rem; scroll-behavior: smooth;
+  }
+  #bp-chat-messages::-webkit-scrollbar { width: 4px; }
+  #bp-chat-messages::-webkit-scrollbar-thumb { background: #d8d0c4; }
+  .bp-msg { display: flex; gap: 0.5rem; align-items: flex-end; max-width: 90%; }
+  .bp-msg.user { align-self: flex-end; flex-direction: row-reverse; }
+  .bp-msg.bot  { align-self: flex-start; }
+  .bp-msg-avatar {
+    width: 26px; height: 26px; flex-shrink: 0; background: #1a4c8c;
+    display: flex; align-items: center; justify-content: center;
+    font-family: 'DM Serif Display', Georgia, serif; font-size: 0.62rem; color: #fff;
+  }
+  .bp-msg.user .bp-msg-avatar { background: #c84b00; }
+  .bp-msg-bubble {
+    padding: 0.6rem 0.85rem; font-family: 'Syne', sans-serif;
+    font-size: 0.82rem; line-height: 1.6; color: #0d0d0d;
+    border: 1px solid #d8d0c4; background: #fff; max-width: 100%;
+  }
+  .bp-msg.user .bp-msg-bubble { background: #1a4c8c; color: #fff; border-color: #1a4c8c; }
+  .bp-msg-bubble a { color: #1a4c8c; text-decoration: underline; }
+  .bp-msg.user .bp-msg-bubble a { color: rgba(255,255,255,0.85); }
+  .bp-typing-bubble {
+    display: flex; align-items: center; gap: 4px; padding: 0.65rem 0.85rem;
+    background: #fff; border: 1px solid #d8d0c4;
+  }
+  .bp-typing-dot {
+    width: 5px; height: 5px; border-radius: 50%; background: #777;
+    animation: bp-typing 1.2s ease-in-out infinite;
+  }
+  .bp-typing-dot:nth-child(2) { animation-delay: 0.2s; }
+  .bp-typing-dot:nth-child(3) { animation-delay: 0.4s; }
+  @keyframes bp-typing {
+    0%,60%,100% { transform: translateY(0); } 30% { transform: translateY(-5px); }
+  }
+
+  /* Input */
+  #bp-chat-footer {
+    border-top: 1px solid #d8d0c4; padding: 0.75rem 1rem;
+    display: flex; gap: 0.5rem; align-items: flex-end;
+    background: #f8f5f0; flex-shrink: 0;
+  }
+  #bp-chat-input {
+    flex: 1; font-family: 'Syne', sans-serif; font-size: 0.82rem; color: #0d0d0d;
+    background: #fff; border: 1px solid #d8d0c4;
+    padding: 0.55rem 0.75rem; resize: none; outline: none;
+    transition: border-color 0.2s; line-height: 1.5;
+    max-height: 100px; overflow-y: auto; border-radius: 0;
+  }
+  #bp-chat-input:focus { border-color: #1a4c8c; }
+  #bp-chat-input::placeholder { color: #aaa; }
+  #bp-chat-send {
+    width: 36px; height: 36px; background: #1a4c8c; border: none; cursor: pointer;
+    display: flex; align-items: center; justify-content: center; flex-shrink: 0;
+    transition: background 0.2s, transform 0.1s; border-radius: 0;
+  }
+  #bp-chat-send:hover { background: #0d3570; }
+  #bp-chat-send:active { transform: scale(0.93); }
+  #bp-chat-send:disabled { opacity: 0.5; cursor: not-allowed; }
+  #bp-chat-send svg { width: 16px; height: 16px; }
+  .bp-disclaimer {
+    text-align: center; font-family: 'DM Mono', monospace;
+    font-size: 0.6rem; color: #aaa; letter-spacing: 0.04em;
+    padding: 0 1rem 0.5rem; flex-shrink: 0;
+  }
 
   /* ── RESPONSIVE ── */
   @media (max-width: 768px) {
@@ -510,12 +661,14 @@
     .contact-grid { grid-template-columns: 1fr; }
     .message-grid { grid-template-columns: 1fr; }
     .form-row { grid-template-columns: 1fr; }
+    #bp-chat-window { width: calc(100vw - 2rem); }
+    #bp-chat-fab { bottom: 1rem; right: 1rem; }
   }
 </style>
 </head>
 <body>
 
-<!-- PRIVACY MODAL -->
+<!-- ── PRIVACY MODAL ── -->
 <div class="modal-overlay" id="privacyModal" role="dialog" aria-modal="true" aria-labelledby="privacyTitle">
   <div class="modal-box">
     <div class="modal-header">
@@ -524,7 +677,7 @@
     </div>
     <div class="modal-body">
       <h3>Who I am</h3>
-      <p>This is the personal portfolio website of Bhargav Patel, a Full Stack .NET Developer based in Brampton, Ontario, Canada. Contact: <a href="mailto:bhargavpp2017@gmail.com1b565a58"><span class="__cf_email__" data-cfemail="16747e776471776066662426272156717b777f7a3875797b">[email&#160;protected]</span></a></p>
+      <p>This is the personal portfolio website of Bhargav Patel, a Full Stack .NET Developer based in Brampton, Ontario, Canada. Contact: bhargavpp2017@gmail.com</p>
 
       <h3>What information I collect</h3>
       <p>When you use the contact form on this website, I collect:</p>
@@ -532,37 +685,31 @@
         <li>Your name and email address</li>
         <li>The subject and message content you provide</li>
       </ul>
-      <p>I also collect anonymous visitor count data via a third-party API (api.countapi.xyz). This tracks the number of page visits only — no personal information, IP address, or browser fingerprint is stored by me.</p>
+      <p>This site does not use cookies, analytics, or tracking of any kind. No personal data is stored on any server I control.</p>
+
+      <h3>AI Chat Widget</h3>
+      <p>The chat widget uses the Groq API to answer questions about my portfolio. If you choose to use it, you will provide your own Groq API key, which is stored only in your browser's localStorage and is never sent to any server I control — only directly to api.groq.com. I do not log, store, or have access to your API key or chat messages.</p>
 
       <h3>How I use your information</h3>
-      <p>Information submitted through the contact form is used solely to respond to your message. It is not sold, shared with third parties, or used for marketing. Messages are delivered via EmailJS — you can review their privacy policy at <a href="https://www.emailjs.com/legal/privacy-policy/" target="_blank">emailjs.com</a>.</p>
-
-      <h3>Cookies</h3>
-      <p>This website does not use tracking cookies or analytics tools. The visitor counter uses a lightweight, anonymous API call with no cookies set on your device.</p>
+      <p>Contact form submissions are used solely to respond to your message. They are delivered via Web3Forms — see their privacy policy at web3forms.com. I do not sell or share your data.</p>
 
       <h3>Third-party services</h3>
       <ul>
-        <li><strong>Google Fonts</strong> — fonts loaded from Google's CDN; subject to Google's privacy policy</li>
-        <li><strong>EmailJS</strong> — used to send contact form submissions to my email inbox</li>
-        <li><strong>CountAPI</strong> — anonymous visit counting with no personal data collected</li>
-        <li><strong>GitHub</strong> — project links point to public GitHub repositories</li>
+        <li><strong>Google Fonts</strong> — fonts loaded from Google's CDN</li>
+        <li><strong>Web3Forms</strong> — contact form delivery service</li>
+        <li><strong>Groq</strong> — AI chat responses (your key, your data)</li>
+        <li><strong>GitHub</strong> — project links to public repositories</li>
       </ul>
 
-      <h3>Data retention</h3>
-      <p>Contact form messages are retained in my email inbox only as long as necessary to respond. I do not maintain a separate database of submitted messages.</p>
-
       <h3>Your rights</h3>
-      <p>If you have submitted a message and would like it deleted, or have any privacy-related questions, please email <a href="mailto:bhargavpp2017@gmail.comc78a8684"><span class="__cf_email__" data-cfemail="44262c2536232532343476747573042329252d286a272b29">[email&#160;protected]</span></a> and I will respond within 5 business days.</p>
+      <p>To request deletion of any submitted message, email bhargavpp2017@gmail.com and I will respond within 5 business days.</p>
 
-      <h3>Changes to this policy</h3>
-      <p>This policy may be updated occasionally. The date below reflects the most recent revision.</p>
-
-      <p class="modal-updated">Last updated: April 2026</p>
+      <p class="modal-updated">Last updated: June 2026</p>
     </div>
   </div>
 </div>
 
-<!-- NAV -->
+<!-- ── NAV ── -->
 <nav>
   <a class="nav-logo" href="#">Bhargav Patel</a>
   <ul class="nav-links">
@@ -576,7 +723,7 @@
   </ul>
 </nav>
 
-<!-- HERO -->
+<!-- ── HERO ── -->
 <section class="hero" id="home">
   <div class="hero-left">
     <p class="hero-eyebrow">&#9632; Available for opportunities · Brampton, ON</p>
@@ -598,14 +745,12 @@
     </div>
     <div class="hero-actions">
       <a class="btn-primary" href="#message">Send a message</a>
-      <a class="btn-outline" href="https://github.com/BhargavPP" target="_blank">GitHub</a>
+      <a class="btn-outline" href="https://github.com/BhargavPP" target="_blank" rel="noopener noreferrer">GitHub</a>
     </div>
-    <!-- Visitor counter -->
-    <div style="margin-top: 1.5rem;">
-      <div class="visitor-badge" id="visitorBadge">
-        <span class="visitor-dot"></span>
-        <span id="visitorCount">— visitors</span>
-      </div>
+    <!-- Visitor counter via hits.sh (free, no signup needed) -->
+    <div style="margin-top:1.5rem;">
+      <img src="https://hits.sh/bhargavpp.github.io.svg?style=flat&label=visitors&color=1a4c8c&labelColor=f8f5f0"
+           alt="Visitor count" style="height:22px;">
     </div>
   </div>
 
@@ -616,9 +761,9 @@
       <p>I bring production discipline to every codebase — performance, observability, and security aren't afterthoughts; they're part of how I work from day one.</p>
       <div class="contact-row">
         <a class="contact-item" href="mailto:bhargavpp2017@gmail.com">
-          <span class="contact-dot"></span><span class="__cf_email__" data-cfemail="d8bab0b9aabfb9aea8a8eae8e9ef98bfb5b9b1b4f6bbb7b5">[email&#160;protected]</span>
+          <span class="contact-dot"></span>bhargavpp2017@gmail.com
         </a>
-        <a class="contact-item" href="https://github.com/BhargavPP" target="_blank">
+        <a class="contact-item" href="https://github.com/BhargavPP" target="_blank" rel="noopener noreferrer">
           <span class="contact-dot"></span>github.com/BhargavPP
         </a>
       </div>
@@ -626,7 +771,7 @@
   </div>
 </section>
 
-<!-- EXPERIENCE -->
+<!-- ── EXPERIENCE ── -->
 <section id="experience">
   <div class="section-inner">
     <div class="section-header">
@@ -634,6 +779,7 @@
       <h2 class="section-title">Experience</h2>
     </div>
     <div class="exp-grid">
+
       <div class="exp-item">
         <div class="exp-meta">
           <div class="exp-period">Jan 2026<br>— Present</div>
@@ -724,11 +870,12 @@
           </div>
         </div>
       </div>
+
     </div>
   </div>
 </section>
 
-<!-- SKILLS -->
+<!-- ── SKILLS ── -->
 <section id="skills">
   <div class="section-inner">
     <div class="section-header">
@@ -838,7 +985,7 @@
   </div>
 </section>
 
-<!-- PROJECTS -->
+<!-- ── PROJECTS ── -->
 <section id="projects">
   <div class="section-inner">
     <div class="section-header">
@@ -847,31 +994,27 @@
     </div>
     <div class="projects-grid">
 
-      <a class="project-card" href="https://github.com/BhargavPP/Demo1" target="_blank">
+      <a class="project-card" href="https://github.com/BhargavPP/Demo1" target="_blank" rel="noopener noreferrer">
         <div class="project-mockup">
-          <svg viewBox="0 0 320 180" xmlns="http://www.w3.org/2000/svg" style="width:100%;display:block;border-radius:4px;background:#0f1117;">
+          <svg viewBox="0 0 320 180" xmlns="http://www.w3.org/2000/svg" style="width:100%;display:block;background:#0f1117;">
             <rect width="320" height="28" fill="#1a1f2e"/>
             <circle cx="14" cy="14" r="4" fill="#ff5f57"/><circle cx="26" cy="14" r="4" fill="#febc2e"/><circle cx="38" cy="14" r="4" fill="#28c840"/>
             <rect x="60" y="8" width="160" height="12" rx="3" fill="#252b3b"/>
             <text x="140" y="18" font-size="7" fill="#6b7280" font-family="monospace" text-anchor="middle">localhost:5000/swagger</text>
             <rect y="28" width="320" height="22" fill="#1f2937"/>
             <text x="12" y="43" font-size="9" fill="#60a5fa" font-family="monospace" font-weight="bold">.NET Core Web API</text>
-            <text x="200" y="43" font-size="7" fill="#4b5563" font-family="monospace">OAS 3.0 · v1.0</text>
             <rect x="10" y="56" width="300" height="16" rx="3" fill="#064e3b"/>
             <rect x="10" y="56" width="36" height="16" rx="3" fill="#10b981"/>
             <text x="22" y="67" font-size="7" fill="#fff" font-family="monospace" font-weight="bold">GET</text>
             <text x="54" y="67" font-size="7" fill="#d1fae5" font-family="monospace">/api/users</text>
-            <text x="240" y="67" font-size="6" fill="#6ee7b7" font-family="monospace">200 OK</text>
             <rect x="10" y="77" width="300" height="16" rx="3" fill="#1e3a5f"/>
             <rect x="10" y="77" width="36" height="16" rx="3" fill="#3b82f6"/>
             <text x="18" y="88" font-size="7" fill="#fff" font-family="monospace" font-weight="bold">POST</text>
             <text x="54" y="88" font-size="7" fill="#bfdbfe" font-family="monospace">/api/users/create</text>
-            <text x="240" y="88" font-size="6" fill="#93c5fd" font-family="monospace">201 Created</text>
             <rect x="10" y="98" width="300" height="16" rx="3" fill="#3b1f1f"/>
             <rect x="10" y="98" width="36" height="16" rx="3" fill="#ef4444"/>
             <text x="20" y="109" font-size="7" fill="#fff" font-family="monospace" font-weight="bold">DEL</text>
             <text x="54" y="109" font-size="7" fill="#fecaca" font-family="monospace">/api/users/{id}</text>
-            <text x="240" y="109" font-size="6" fill="#fca5a5" font-family="monospace">204 No Content</text>
             <rect x="10" y="119" width="300" height="16" rx="3" fill="#2d1f4a"/>
             <rect x="10" y="119" width="36" height="16" rx="3" fill="#8b5cf6"/>
             <text x="20" y="130" font-size="7" fill="#fff" font-family="monospace" font-weight="bold">PUT</text>
@@ -890,52 +1033,28 @@
         </div>
       </a>
 
-      <a class="project-card" href="https://github.com/BhargavPP/payroll" target="_blank">
+      <a class="project-card" href="https://github.com/BhargavPP/payroll" target="_blank" rel="noopener noreferrer">
         <div class="project-mockup">
-          <svg viewBox="0 0 320 180" xmlns="http://www.w3.org/2000/svg" style="width:100%;display:block;border-radius:4px;background:#f8f9fb;">
+          <svg viewBox="0 0 320 180" xmlns="http://www.w3.org/2000/svg" style="width:100%;display:block;background:#f8f9fb;">
             <rect width="64" height="180" fill="#1a4c8c"/>
             <rect x="8" y="16" width="48" height="8" rx="2" fill="rgba(255,255,255,0.2)"/>
             <rect x="8" y="32" width="48" height="6" rx="2" fill="rgba(255,255,255,0.12)"/>
             <rect x="8" y="46" width="32" height="6" rx="2" fill="rgba(255,255,255,0.3)"/>
-            <rect x="8" y="60" width="40" height="6" rx="2" fill="rgba(255,255,255,0.12)"/>
-            <rect x="8" y="74" width="36" height="6" rx="2" fill="rgba(255,255,255,0.12)"/>
-            <rect x="8" y="88" width="42" height="6" rx="2" fill="rgba(255,255,255,0.12)"/>
             <rect x="64" y="0" width="256" height="28" fill="#fff" stroke="#e5e7eb" stroke-width="0.5"/>
             <text x="76" y="18" font-size="9" fill="#1a4c8c" font-family="sans-serif" font-weight="bold">Payroll Dashboard</text>
-            <rect x="260" y="7" width="50" height="14" rx="3" fill="#1a4c8c"/>
-            <text x="285" y="17" font-size="6.5" fill="#fff" font-family="sans-serif" text-anchor="middle">Run Payroll</text>
             <rect x="72" y="36" width="70" height="38" rx="3" fill="#fff" stroke="#e5e7eb" stroke-width="0.5"/>
             <text x="80" y="50" font-size="6" fill="#6b7280" font-family="sans-serif">Total Payroll</text>
             <text x="80" y="64" font-size="11" fill="#111827" font-family="sans-serif" font-weight="bold">$84,200</text>
             <rect x="148" y="36" width="70" height="38" rx="3" fill="#fff" stroke="#e5e7eb" stroke-width="0.5"/>
             <text x="156" y="50" font-size="6" fill="#6b7280" font-family="sans-serif">Employees</text>
             <text x="156" y="64" font-size="11" fill="#111827" font-family="sans-serif" font-weight="bold">142</text>
-            <rect x="224" y="36" width="86" height="38" rx="3" fill="#fff" stroke="#e5e7eb" stroke-width="0.5"/>
-            <text x="232" y="50" font-size="6" fill="#6b7280" font-family="sans-serif">Next Pay Date</text>
-            <text x="232" y="64" font-size="9" fill="#111827" font-family="sans-serif" font-weight="bold">Apr 15, 2026</text>
             <rect x="72" y="82" width="238" height="60" rx="3" fill="#fff" stroke="#e5e7eb" stroke-width="0.5"/>
             <text x="80" y="94" font-size="6.5" fill="#374151" font-family="sans-serif" font-weight="bold">Monthly payroll trend</text>
             <rect x="84" y="100" width="14" height="32" rx="2" fill="#bfdbfe"/>
             <rect x="104" y="108" width="14" height="24" rx="2" fill="#bfdbfe"/>
             <rect x="124" y="96" width="14" height="36" rx="2" fill="#bfdbfe"/>
             <rect x="144" y="104" width="14" height="28" rx="2" fill="#bfdbfe"/>
-            <rect x="164" y="98" width="14" height="34" rx="2" fill="#bfdbfe"/>
             <rect x="184" y="92" width="14" height="40" rx="2" fill="#1a4c8c"/>
-            <rect x="204" y="100" width="14" height="32" rx="2" fill="#bfdbfe"/>
-            <text x="84" y="140" font-size="5.5" fill="#9ca3af" font-family="sans-serif">Oct</text>
-            <text x="104" y="140" font-size="5.5" fill="#9ca3af" font-family="sans-serif">Nov</text>
-            <text x="124" y="140" font-size="5.5" fill="#9ca3af" font-family="sans-serif">Dec</text>
-            <text x="144" y="140" font-size="5.5" fill="#9ca3af" font-family="sans-serif">Jan</text>
-            <text x="164" y="140" font-size="5.5" fill="#9ca3af" font-family="sans-serif">Feb</text>
-            <text x="184" y="140" font-size="5.5" fill="#9ca3af" font-family="sans-serif">Mar</text>
-            <text x="204" y="140" font-size="5.5" fill="#9ca3af" font-family="sans-serif">Apr</text>
-            <rect x="72" y="150" width="238" height="24" rx="3" fill="#fff" stroke="#e5e7eb" stroke-width="0.5"/>
-            <text x="80" y="160" font-size="6" fill="#374151" font-family="sans-serif">Ananya Shah</text>
-            <text x="160" y="160" font-size="6" fill="#374151" font-family="sans-serif">Engineering</text>
-            <text x="260" y="160" font-size="6" fill="#10b981" font-family="sans-serif">$5,200</text>
-            <text x="80" y="169" font-size="6" fill="#9ca3af" font-family="sans-serif">Ravi Mehta</text>
-            <text x="160" y="169" font-size="6" fill="#9ca3af" font-family="sans-serif">Finance</text>
-            <text x="260" y="169" font-size="6" fill="#9ca3af" font-family="sans-serif">$4,800</text>
           </svg>
         </div>
         <div class="project-lang">JavaScript · HR Domain</div>
@@ -947,36 +1066,23 @@
         </div>
       </a>
 
-      <a class="project-card" href="https://github.com/BhargavPP/QuestionAnswer" target="_blank">
+      <a class="project-card" href="https://github.com/BhargavPP/QuestionAnswer" target="_blank" rel="noopener noreferrer">
         <div class="project-mockup">
-          <svg viewBox="0 0 320 180" xmlns="http://www.w3.org/2000/svg" style="width:100%;display:block;border-radius:4px;background:#fffdf9;">
+          <svg viewBox="0 0 320 180" xmlns="http://www.w3.org/2000/svg" style="width:100%;display:block;background:#fffdf9;">
             <rect width="320" height="30" fill="#1a4c8c"/>
             <text x="16" y="20" font-size="10" fill="#fff" font-family="sans-serif" font-weight="bold">Q&amp;A Hub</text>
-            <rect x="160" y="8" width="100" height="14" rx="3" fill="rgba(255,255,255,0.15)"/>
-            <text x="210" y="18" font-size="7" fill="rgba(255,255,255,0.7)" font-family="sans-serif" text-anchor="middle">Search questions...</text>
-            <rect x="270" y="8" width="40" height="14" rx="3" fill="#c84b00"/>
-            <text x="290" y="18" font-size="7" fill="#fff" font-family="sans-serif" text-anchor="middle">Ask</text>
             <rect x="8" y="38" width="304" height="40" rx="3" fill="#fff" stroke="#e5e7eb" stroke-width="0.5"/>
             <rect x="8" y="38" width="3" height="40" fill="#1a4c8c" rx="2"/>
             <text x="18" y="51" font-size="7.5" fill="#111827" font-family="sans-serif" font-weight="bold">How to implement OAuth 2.0 in ASP.NET Core?</text>
-            <rect x="18" y="56" width="28" height="9" rx="2" fill="#e8f0fb"/>
-            <text x="32" y="63" font-size="5.5" fill="#1a4c8c" font-family="sans-serif" text-anchor="middle">.NET</text>
-            <rect x="50" y="56" width="36" height="9" rx="2" fill="#e8f0fb"/>
-            <text x="68" y="63" font-size="5.5" fill="#1a4c8c" font-family="sans-serif" text-anchor="middle">Security</text>
             <text x="240" y="63" font-size="6" fill="#6b7280" font-family="sans-serif">▲ 42 votes · 8 answers</text>
             <rect x="8" y="84" width="304" height="40" rx="3" fill="#fff" stroke="#e5e7eb" stroke-width="0.5"/>
             <rect x="8" y="84" width="3" height="40" fill="#10b981" rx="2"/>
             <text x="18" y="97" font-size="7.5" fill="#111827" font-family="sans-serif" font-weight="bold">Best practices for SQL Server query optimisation?</text>
-            <rect x="18" y="102" width="28" height="9" rx="2" fill="#e8f0fb"/>
-            <text x="32" y="109" font-size="5.5" fill="#1a4c8c" font-family="sans-serif" text-anchor="middle">SQL</text>
-            <rect x="50" y="102" width="40" height="9" rx="2" fill="#e8f0fb"/>
-            <text x="70" y="109" font-size="5.5" fill="#1a4c8c" font-family="sans-serif" text-anchor="middle">Performance</text>
             <text x="240" y="109" font-size="6" fill="#6b7280" font-family="sans-serif">▲ 31 votes · 5 answers</text>
             <rect x="8" y="130" width="304" height="44" rx="3" fill="#f0fdf4" stroke="#d1fae5" stroke-width="0.5"/>
             <text x="18" y="143" font-size="6.5" fill="#374151" font-family="sans-serif" font-weight="bold">✓ Accepted answer</text>
             <rect x="18" y="148" width="200" height="5" rx="2" fill="#d1fae5"/>
             <rect x="18" y="157" width="160" height="5" rx="2" fill="#d1fae5"/>
-            <rect x="18" y="166" width="120" height="5" rx="2" fill="#d1fae5"/>
           </svg>
         </div>
         <div class="project-lang">Full Stack · Community</div>
@@ -988,33 +1094,22 @@
         </div>
       </a>
 
-      <a class="project-card" href="https://github.com/BhargavPP/vroom" target="_blank">
+      <a class="project-card" href="https://github.com/BhargavPP/vroom" target="_blank" rel="noopener noreferrer">
         <div class="project-mockup">
-          <svg viewBox="0 0 320 180" xmlns="http://www.w3.org/2000/svg" style="width:100%;display:block;border-radius:4px;background:#0d0d14;">
+          <svg viewBox="0 0 320 180" xmlns="http://www.w3.org/2000/svg" style="width:100%;display:block;background:#0d0d14;">
             <rect width="320" height="26" fill="#12121f"/>
             <text x="16" y="17" font-size="10" fill="#fff" font-family="sans-serif" font-weight="bold">vroom</text>
             <circle cx="290" cy="13" r="5" fill="#10b981"/>
-            <text x="282" y="25" font-size="5" fill="#6ee7b7" font-family="sans-serif">LIVE</text>
             <path d="M 160 130 m -70 0 a 70 70 0 1 1 140 0" stroke="#1e1e2e" stroke-width="14" fill="none"/>
-            <path d="M 160 130 m -70 0 a 70 70 0 1 1 140 0" stroke="#1a4c8c" stroke-width="14" fill="none" stroke-dasharray="220" stroke-dashoffset="66"/>
-            <path d="M 160 130 m -70 0 a 70 70 0 0 1 105 -35" stroke="#60a5fa" stroke-width="14" fill="none" stroke-dasharray="110" stroke-dashoffset="0"/>
+            <path d="M 160 130 m -70 0 a 70 70 0 0 1 105 -35" stroke="#60a5fa" stroke-width="14" fill="none"/>
             <text x="160" y="122" font-size="22" fill="#fff" font-family="monospace" font-weight="bold" text-anchor="middle">72</text>
             <text x="160" y="134" font-size="7" fill="#6b7280" font-family="sans-serif" text-anchor="middle">km/h</text>
-            <text x="92" y="140" font-size="7" fill="#4b5563" font-family="monospace">0</text>
-            <text x="220" y="140" font-size="7" fill="#4b5563" font-family="monospace">120</text>
             <rect x="16" y="148" width="66" height="26" rx="3" fill="#12121f"/>
             <text x="49" y="158" font-size="6" fill="#6b7280" font-family="sans-serif" text-anchor="middle">RPM</text>
             <text x="49" y="170" font-size="9" fill="#60a5fa" font-family="monospace" text-anchor="middle">3,400</text>
-            <rect x="90" y="148" width="66" height="26" rx="3" fill="#12121f"/>
-            <text x="123" y="158" font-size="6" fill="#6b7280" font-family="sans-serif" text-anchor="middle">FUEL</text>
-            <rect x="100" y="163" width="46" height="5" rx="2" fill="#1e1e2e"/>
-            <rect x="100" y="163" width="28" height="5" rx="2" fill="#f59e0b"/>
             <rect x="164" y="148" width="66" height="26" rx="3" fill="#12121f"/>
             <text x="197" y="158" font-size="6" fill="#6b7280" font-family="sans-serif" text-anchor="middle">TEMP</text>
             <text x="197" y="170" font-size="9" fill="#10b981" font-family="monospace" text-anchor="middle">91°C</text>
-            <rect x="238" y="148" width="68" height="26" rx="3" fill="#12121f"/>
-            <text x="272" y="158" font-size="6" fill="#6b7280" font-family="sans-serif" text-anchor="middle">DIST</text>
-            <text x="272" y="170" font-size="9" fill="#fff" font-family="monospace" text-anchor="middle">14.2 km</text>
           </svg>
         </div>
         <div class="project-lang">JavaScript · Real-time UI</div>
@@ -1026,38 +1121,18 @@
         </div>
       </a>
 
-      <a class="project-card" href="https://github.com/BhargavPP/code" target="_blank">
+      <a class="project-card" href="https://github.com/BhargavPP/code" target="_blank" rel="noopener noreferrer">
         <div class="project-mockup">
-          <svg viewBox="0 0 320 180" xmlns="http://www.w3.org/2000/svg" style="width:100%;display:block;border-radius:4px;background:#1e1e2e;">
+          <svg viewBox="0 0 320 180" xmlns="http://www.w3.org/2000/svg" style="width:100%;display:block;background:#1e1e2e;">
             <rect width="320" height="22" fill="#16161f"/>
             <rect x="8" y="6" width="70" height="10" rx="2" fill="#2a2a3e"/>
             <text x="43" y="14" font-size="6" fill="#a0a0c0" font-family="monospace" text-anchor="middle">styles.css</text>
-            <rect x="84" y="6" width="60" height="10" rx="2" fill="#1e1e2e"/>
-            <text x="114" y="14" font-size="6" fill="#555580" font-family="monospace" text-anchor="middle">layout.css</text>
-            <rect x="0" y="22" width="24" height="158" fill="#16161f"/>
-            <text x="18" y="36" font-size="6.5" fill="#3a3a5c" font-family="monospace" text-anchor="end">1</text>
-            <text x="18" y="48" font-size="6.5" fill="#3a3a5c" font-family="monospace" text-anchor="end">2</text>
-            <text x="18" y="60" font-size="6.5" fill="#3a3a5c" font-family="monospace" text-anchor="end">3</text>
-            <text x="18" y="72" font-size="6.5" fill="#3a3a5c" font-family="monospace" text-anchor="end">4</text>
-            <text x="18" y="84" font-size="6.5" fill="#3a3a5c" font-family="monospace" text-anchor="end">5</text>
-            <text x="18" y="96" font-size="6.5" fill="#3a3a5c" font-family="monospace" text-anchor="end">6</text>
             <text x="30" y="36" font-size="6.5" fill="#c084fc" font-family="monospace">:root {</text>
-            <text x="30" y="48" font-size="6.5" fill="#60a5fa" font-family="monospace">  --color-primary: </text><text x="150" y="48" font-size="6.5" fill="#fb923c" font-family="monospace">#1a4c8c</text><text x="191" y="48" font-size="6.5" fill="#e2e8f0" font-family="monospace">;</text>
-            <text x="30" y="60" font-size="6.5" fill="#60a5fa" font-family="monospace">  --spacing-md: </text><text x="140" y="60" font-size="6.5" fill="#fb923c" font-family="monospace">1.5rem</text><text x="176" y="60" font-size="6.5" fill="#e2e8f0" font-family="monospace">;</text>
-            <text x="30" y="72" font-size="6.5" fill="#e2e8f0" font-family="monospace">}</text>
+            <text x="30" y="48" font-size="6.5" fill="#60a5fa" font-family="monospace">  --color-primary: </text>
+            <text x="150" y="48" font-size="6.5" fill="#fb923c" font-family="monospace">#1a4c8c</text>
             <text x="30" y="96" font-size="6.5" fill="#c084fc" font-family="monospace">.card {</text>
-            <text x="30" y="108" font-size="6.5" fill="#60a5fa" font-family="monospace">  display: </text><text x="100" y="108" font-size="6.5" fill="#fb923c" font-family="monospace">grid</text><text x="124" y="108" font-size="6.5" fill="#e2e8f0" font-family="monospace">;</text>
-            <text x="30" y="120" font-size="6.5" fill="#60a5fa" font-family="monospace">  border-radius: </text><text x="148" y="120" font-size="6.5" fill="#fb923c" font-family="monospace">8px</text><text x="168" y="120" font-size="6.5" fill="#e2e8f0" font-family="monospace">;</text>
-            <line x1="220" y1="22" x2="220" y2="180" stroke="#2a2a3e" stroke-width="1"/>
-            <rect x="221" y="22" width="99" height="158" fill="#16161f"/>
-            <text x="270" y="40" font-size="6" fill="#555580" font-family="sans-serif" text-anchor="middle">PREVIEW</text>
-            <rect x="232" y="48" width="76" height="40" rx="4" fill="#1a4c8c"/>
-            <rect x="240" y="56" width="48" height="5" rx="2" fill="rgba(255,255,255,0.4)"/>
-            <rect x="240" y="65" width="36" height="5" rx="2" fill="rgba(255,255,255,0.2)"/>
-            <rect x="240" y="74" width="52" height="7" rx="3" fill="#c84b00"/>
-            <rect x="232" y="96" width="76" height="30" rx="4" fill="#252540"/>
-            <rect x="240" y="103" width="40" height="4" rx="2" fill="rgba(255,255,255,0.2)"/>
-            <rect x="240" y="111" width="56" height="4" rx="2" fill="rgba(255,255,255,0.1)"/>
+            <text x="30" y="108" font-size="6.5" fill="#60a5fa" font-family="monospace">  display: </text>
+            <text x="100" y="108" font-size="6.5" fill="#fb923c" font-family="monospace">grid</text>
           </svg>
         </div>
         <div class="project-lang">CSS · Frontend</div>
@@ -1069,8 +1144,9 @@
         </div>
       </a>
 
-      <a class="project-card" href="https://github.com/BhargavPP" target="_blank" style="background: var(--paper-warm); border-style: dashed; display:flex; flex-direction:column; align-items:center; justify-content:center; text-align:center; gap:0.75rem; min-height: 280px;">
-        <div style="font-size: 2.5rem; line-height:1;">⌥</div>
+      <a class="project-card" href="https://github.com/BhargavPP" target="_blank" rel="noopener noreferrer"
+         style="background:var(--paper-warm);border-style:dashed;align-items:center;justify-content:center;text-align:center;gap:0.75rem;min-height:280px;">
+        <div style="font-size:2.5rem;line-height:1;">⌥</div>
         <div class="project-lang" style="margin:0;">29 Repositories</div>
         <div class="project-name" style="font-size:1.1rem;">View all on GitHub</div>
         <div class="project-desc" style="max-width:200px;">Explore the full collection of enterprise utilities, API projects, and architectural experiments.</div>
@@ -1081,7 +1157,7 @@
   </div>
 </section>
 
-<!-- ACHIEVEMENTS -->
+<!-- ── ACHIEVEMENTS ── -->
 <section id="achievements">
   <div class="section-inner">
     <div class="section-header">
@@ -1117,7 +1193,7 @@
   </div>
 </section>
 
-<!-- EDUCATION -->
+<!-- ── EDUCATION ── -->
 <section id="education">
   <div class="section-inner">
     <div class="section-header">
@@ -1137,13 +1213,13 @@
         <div class="edu-institution">Veer Narmad South Gujarat University, India</div>
         <div class="edu-period">May 2006 – May 2010</div>
       </div>
-      <div class="edu-card" style="border-left: 3px solid #1a4c8c;">
+      <div class="edu-card" style="border-left:3px solid #1a4c8c;">
         <div class="edu-type">Certification</div>
         <div class="edu-degree">Microsoft Azure AI Fundamentals</div>
         <div class="edu-institution">Microsoft — AI-900</div>
         <div class="edu-period">Professional Certificate</div>
       </div>
-      <div class="edu-card" style="border-left: 3px solid #c84b00; background: #fdf9f6;">
+      <div class="edu-card" style="border-left:3px solid #c84b00;background:#fdf9f6;">
         <div class="edu-type">Methodology</div>
         <div class="edu-degree">Agile / Scrum SDLC</div>
         <div class="edu-institution">Practiced across Azure DevOps, Jira &amp; Azure Boards</div>
@@ -1153,7 +1229,7 @@
   </div>
 </section>
 
-<!-- ══ SEND MESSAGE ══ -->
+<!-- ── SEND MESSAGE ── -->
 <section id="message">
   <div class="section-inner">
     <div class="section-header">
@@ -1164,19 +1240,18 @@
       <div class="message-intro">
         <p>Have a project in mind, a role to fill, or just want to connect? Fill in the form and I'll get back to you within one business day.</p>
         <p>Whether it's a full-time opportunity, contract work, or a technical question — I'm happy to talk.</p>
-        <div style="margin-top: 2rem; padding: 1.25rem; background: var(--paper-card); border: 1px solid var(--rule);">
-          <div style="font-family:'DM Mono',monospace; font-size:0.72rem; color:var(--ink-muted); letter-spacing:0.1em; text-transform:uppercase; margin-bottom:0.75rem;">Direct channels</div>
+        <div style="margin-top:2rem;padding:1.25rem;background:var(--paper-card);border:1px solid var(--rule);">
+          <div style="font-family:'DM Mono',monospace;font-size:0.72rem;color:var(--ink-muted);letter-spacing:0.1em;text-transform:uppercase;margin-bottom:0.75rem;">Direct channels</div>
           <a class="contact-item" href="mailto:bhargavpp2017@gmail.com" style="margin-bottom:0.4rem;">
-            <span class="contact-dot"></span><span class="__cf_email__" data-cfemail="a4c6ccc5d6c3c5d2d4d496949593e4c3c9c5cdc88ac7cbc9">[email&#160;protected]</span>
+            <span class="contact-dot"></span>bhargavpp2017@gmail.com
           </a>
-          <a class="contact-item" href="https://www.linkedin.com/in/bhargavpp" target="_blank">
+          <a class="contact-item" href="https://www.linkedin.com/in/bhargavpp" target="_blank" rel="noopener noreferrer">
             <span class="contact-dot"></span>linkedin.com/in/bhargavpp
           </a>
         </div>
       </div>
 
       <div>
-        <!-- EmailJS setup: replace YOUR_PUBLIC_KEY, YOUR_SERVICE_ID, YOUR_TEMPLATE_ID -->
         <form class="message-form" id="contactForm" onsubmit="sendMessage(event)">
           <div class="form-row">
             <div class="form-field">
@@ -1205,17 +1280,14 @@
             <label for="msg_body">Message *</label>
             <textarea id="msg_body" name="message" required placeholder="Tell me about the opportunity, tech stack, timeline..."></textarea>
           </div>
-          <!-- HONEYPOT: hidden from real users, bots fill it in -->
+          <!-- Honeypot -->
           <div style="position:absolute;left:-9999px;opacity:0;pointer-events:none;" aria-hidden="true">
-            <input type="text" name="website" id="honeypot" tabindex="-1" autocomplete="off" placeholder="Leave this empty">
+            <input type="text" name="website" id="honeypot" tabindex="-1" autocomplete="off">
           </div>
-          <!-- Hidden field for reCAPTCHA token -->
-          <input type="hidden" name="recaptcha_token" id="recaptchaToken">
           <div class="form-submit">
             <button type="submit" class="btn-send" id="sendBtn">Send message →</button>
             <span class="privacy-note">
               By sending you agree to the <a onclick="openPrivacy()">Privacy Policy</a>.
-              This site is protected by reCAPTCHA.
             </span>
           </div>
           <div class="form-status" id="formStatus"></div>
@@ -1225,7 +1297,7 @@
   </div>
 </section>
 
-<!-- CONTACT -->
+<!-- ── CONTACT ── -->
 <section id="contact">
   <div class="section-inner">
     <div class="section-header">
@@ -1240,15 +1312,15 @@
       <div class="contact-links">
         <a class="contact-link-item" href="mailto:bhargavpp2017@gmail.com">
           <span class="contact-link-icon">✉</span>
-          <span class="contact-link-label"><span class="__cf_email__" data-cfemail="a1c3c9c0d3c6c0d7d1d193919096e1c6ccc0c8cd8fc2cecc">[email&#160;protected]</span></span>
+          <span class="contact-link-label">bhargavpp2017@gmail.com</span>
           <span class="contact-link-arrow">↗</span>
         </a>
-        <a class="contact-link-item" href="https://github.com/BhargavPP" target="_blank">
+        <a class="contact-link-item" href="https://github.com/BhargavPP" target="_blank" rel="noopener noreferrer">
           <span class="contact-link-icon">⌥</span>
           <span class="contact-link-label">github.com/BhargavPP</span>
           <span class="contact-link-arrow">↗</span>
         </a>
-        <a class="contact-link-item" href="https://www.linkedin.com/in/bhargavpp" target="_blank">
+        <a class="contact-link-item" href="https://www.linkedin.com/in/bhargavpp" target="_blank" rel="noopener noreferrer">
           <span class="contact-link-icon">in</span>
           <span class="contact-link-label">LinkedIn profile</span>
           <span class="contact-link-arrow">↗</span>
@@ -1258,22 +1330,132 @@
   </div>
 </section>
 
-<!-- FOOTER -->
+<!-- ── FOOTER ── -->
 <footer>
   <div class="footer-inner">
     <span>&copy; 2026 Bhargav Patel &nbsp;·&nbsp; Full Stack .NET Developer &nbsp;·&nbsp; Brampton, Ontario, Canada</span>
-    <span class="footer-sep">|</span>
+    <span style="color:rgba(255,255,255,0.15)">|</span>
     <span class="footer-privacy" onclick="openPrivacy()">Privacy Policy</span>
   </div>
 </footer>
-     <script>
 
-const WEB3FORMS_KEY = "3f4a1ad0-83a0-4a6f-b96c-abe2cf062fdc"; // ← paste your key here
+<!-- ══════════════════════════════════════════════
+     CHAT WIDGET HTML
+══════════════════════════════════════════════ -->
+<div id="bp-chat-fab">
+  <div id="bp-chat-window" role="dialog" aria-label="Chat with Bhargav's AI assistant">
 
+    <!-- API Key Setup Overlay -->
+    <div id="bp-api-setup">
+      <h3>Ask me anything about Bhargav</h3>
+      <p>This AI assistant knows Bhargav's full career, skills, and projects. Enter your free Groq API key to start — it stays in your browser only.</p>
+      <div class="bp-setup-badge">
+        <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+          <path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/>
+        </svg>
+        Key stored in your browser only — never sent to any server except Groq
+      </div>
+      <input type="password" id="bp-api-key-input" placeholder="gsk_..." autocomplete="off" spellcheck="false">
+      <button id="bp-api-key-save" onclick="bpSaveKey()">Start chatting →</button>
+      <p class="bp-setup-note">
+        Get a 100% free key at
+        <a href="https://console.groq.com" target="_blank" rel="noopener noreferrer">console.groq.com</a>
+        — no credit card needed.<br><br>
+        Free tier: 6,000 requests/day · Model: Llama 3.1 8B Instant
+      </p>
+    </div>
+
+    <!-- Header -->
+    <div id="bp-chat-header">
+      <div class="bp-chat-avatar">BP</div>
+      <div>
+        <div class="bp-chat-header-name">Bhargav's AI Assistant</div>
+        <div class="bp-chat-header-status">
+          <span class="bp-status-dot"></span>
+          <span>Powered by Groq · Free</span>
+        </div>
+      </div>
+    </div>
+
+    <!-- Suggested Questions -->
+    <div id="bp-suggestions">
+      <div class="bp-suggestions-label">Quick questions</div>
+      <div class="bp-suggestions-list">
+        <button class="bp-chip" onclick="bpAsk('What technologies does Bhargav specialise in?')">Tech stack?</button>
+        <button class="bp-chip" onclick="bpAsk('Tell me about Bhargav\'s work experience')">Experience?</button>
+        <button class="bp-chip" onclick="bpAsk('What projects has Bhargav built on GitHub?')">Projects?</button>
+        <button class="bp-chip" onclick="bpAsk('Is Bhargav available for work right now?')">Available?</button>
+        <button class="bp-chip" onclick="bpAsk('What is Bhargav\'s educational background?')">Education?</button>
+        <button class="bp-chip" onclick="bpAsk('How can I contact Bhargav?')">Contact?</button>
+      </div>
+    </div>
+
+    <!-- Messages -->
+    <div id="bp-chat-messages">
+      <div class="bp-msg bot">
+        <div class="bp-msg-avatar">BP</div>
+        <div class="bp-msg-bubble">
+          Hi! 👋 I'm Bhargav's AI assistant. I know all about his 14+ years of .NET experience, projects, skills, and availability. What would you like to know?
+        </div>
+      </div>
+    </div>
+
+    <!-- Input -->
+    <div id="bp-chat-footer">
+      <textarea
+        id="bp-chat-input"
+        placeholder="Ask about skills, experience, projects…"
+        rows="1"
+        aria-label="Your message"
+        onkeydown="bpHandleKey(event)"
+        oninput="bpAutoResize(this)"
+      ></textarea>
+      <button id="bp-chat-send" onclick="bpSendMessage()" aria-label="Send">
+        <svg viewBox="0 0 24 24" fill="none" stroke="#fff" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
+          <line x1="22" y1="2" x2="11" y2="13"/>
+          <polygon points="22 2 15 22 11 13 2 9 22 2"/>
+        </svg>
+      </button>
+    </div>
+    <div class="bp-disclaimer">Powered by Groq · Llama 3.1 · Free tier</div>
+  </div>
+
+  <!-- FAB Button -->
+  <button id="bp-chat-btn" onclick="bpToggleChat()" aria-label="Chat with Bhargav's AI">
+    <span id="bp-chat-unread"></span>
+    <svg class="chat-icon" viewBox="0 0 24 24" fill="none" stroke="#fff" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+      <path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z"/>
+    </svg>
+    <svg class="close-icon" viewBox="0 0 24 24" fill="none" stroke="#fff" stroke-width="2.5" stroke-linecap="round">
+      <line x1="18" y1="6" x2="6" y2="18"/>
+      <line x1="6" y1="6" x2="18" y2="18"/>
+    </svg>
+  </button>
+</div>
+
+<!-- ══════════════════════════════════════════════
+     ALL SCRIPTS
+══════════════════════════════════════════════ -->
+<script>
+// ═══════════════════════════════════════════════════════
+// ▼▼▼  ONLY LINE YOU NEED TO CHANGE  ▼▼▼
+// Paste your Groq API key here (get it free at console.groq.com)
+// If you leave it empty, visitors will be asked to enter their own key
+const GROQ_API_KEY = '';   // e.g. 'gsk_xxxxxxxxxxxxxxxxxxxx'
+// ▲▲▲  ONLY LINE YOU NEED TO CHANGE  ▲▲▲
+// ═══════════════════════════════════════════════════════
+
+// ── WEB3FORMS KEY (for contact form) ──
+// Get your free key at https://web3forms.com
+const WEB3FORMS_KEY = '3f4a1ad0-83a0-4a6f-b96c-abe2cf062fdc';
+
+// ════════════════════════════════════════
+// CONTACT FORM
+// ════════════════════════════════════════
 const RATE_LIMIT = { max: 3, windowMs: 10 * 60 * 1000 };
 
 function checkRateLimit() {
-  const now = Date.now();
+  const now    = Date.now();
   const stored = JSON.parse(sessionStorage.getItem('_bp_rl') || '[]');
   const recent = stored.filter(t => now - t < RATE_LIMIT.windowMs);
   if (recent.length >= RATE_LIMIT.max) return false;
@@ -1290,21 +1472,16 @@ function sanitise(str) {
 
 async function sendMessage(e) {
   e.preventDefault();
-
   const btn    = document.getElementById('sendBtn');
   const status = document.getElementById('formStatus');
-
-  status.className    = 'form-status';
+  status.className     = 'form-status';
   status.style.display = 'none';
 
-  // Honeypot check
   if (document.getElementById('honeypot').value) {
     status.textContent = '✓ Message sent!';
     status.className   = 'form-status success';
     return;
   }
-
-  // Rate limit check
   if (!checkRateLimit()) {
     status.textContent = '⚠ Too many submissions. Please try again later.';
     status.className   = 'form-status error';
@@ -1321,27 +1498,25 @@ async function sendMessage(e) {
     email:        sanitise(document.getElementById('msg_email').value),
     enquiry_type: sanitise(document.getElementById('msg_type').value),
     message:      sanitise(document.getElementById('msg_body').value),
-    botcheck:     ""   // Web3Forms' own honeypot field
+    botcheck:     ''
   };
 
   try {
-    const res  = await fetch("https://api.web3forms.com/submit", {
-      method:  "POST",
-      headers: { "Content-Type": "application/json", "Accept": "application/json" },
+    const res  = await fetch('https://api.web3forms.com/submit', {
+      method:  'POST',
+      headers: { 'Content-Type': 'application/json', 'Accept': 'application/json' },
       body:    JSON.stringify(payload)
     });
     const data = await res.json();
-
     if (data.success) {
       status.textContent = "✓ Message sent! I'll get back to you within one business day.";
       status.className   = 'form-status success';
       document.getElementById('contactForm').reset();
     } else {
-      throw new Error(data.message || 'Submission rejected');
+      throw new Error(data.message || 'Rejected');
     }
-
   } catch (err) {
-    status.textContent = '✗ Could not send. Please email me directly.';
+    status.textContent = '✗ Could not send. Please email me directly at bhargavpp2017@gmail.com';
     status.className   = 'form-status error';
   }
 
@@ -1349,20 +1524,9 @@ async function sendMessage(e) {
   btn.textContent = 'Send message →';
 }
 
-// Visitor counter
-(async function loadVisitorCount() {
-  try {
-    const res  = await fetch('https://api.countapi.xyz/hit/bhargavpp.portfolio/visitors');
-    const data = await res.json();
-    document.getElementById('visitorCount').textContent =
-      Number(data.value).toLocaleString() + ' visitors';
-  } catch {
-    const badge = document.getElementById('visitorBadge');
-    if (badge) badge.style.display = 'none';
-  }
-})();
-
-// Privacy modal
+// ════════════════════════════════════════
+// PRIVACY MODAL
+// ════════════════════════════════════════
 function openPrivacy() {
   document.getElementById('privacyModal').classList.add('open');
   document.body.style.overflow = 'hidden';
@@ -1371,17 +1535,14 @@ function closePrivacy() {
   document.getElementById('privacyModal').classList.remove('open');
   document.body.style.overflow = '';
 }
-
-// Smooth scroll
-document.querySelectorAll('a[href^="#"]').forEach(anchor => {
-  anchor.addEventListener('click', e => {
-    e.preventDefault();
-    const target = document.querySelector(anchor.getAttribute('href'));
-    if (target) target.scrollIntoView({ behavior: 'smooth', block: 'start' });
-  });
+// Close modal on backdrop click
+document.getElementById('privacyModal').addEventListener('click', function(e) {
+  if (e.target === this) closePrivacy();
 });
 
-// Scroll-in animation
+// ════════════════════════════════════════
+// SCROLL ANIMATIONS
+// ════════════════════════════════════════
 const observer = new IntersectionObserver((entries) => {
   entries.forEach(e => {
     if (e.isIntersecting) {
@@ -1400,26 +1561,333 @@ document.querySelectorAll(
   observer.observe(el);
 });
 
-// Security: noopener on external links
+// ════════════════════════════════════════
+// SECURITY: noopener on all external links
+// ════════════════════════════════════════
 document.querySelectorAll('a[target="_blank"]').forEach(a => {
   a.setAttribute('rel', 'noopener noreferrer');
 });
 
-// CSRF token injection
-(function injectCsrfToken() {
+// CSRF token
+(function () {
   let token = sessionStorage.getItem('_bp_csrf');
-  if (!token) {
-    token = crypto.randomUUID();
-    sessionStorage.setItem('_bp_csrf', token);
-  }
+  if (!token) { token = crypto.randomUUID(); sessionStorage.setItem('_bp_csrf', token); }
   const field  = document.createElement('input');
-  field.type   = 'hidden';
-  field.name   = 'csrf_token';
-  field.value  = token;
+  field.type   = 'hidden'; field.name = 'csrf_token'; field.value = token;
   const form   = document.getElementById('contactForm');
   if (form) form.appendChild(field);
 })();
 
+// ════════════════════════════════════════
+// GROQ AI CHAT WIDGET
+// ════════════════════════════════════════
+(function () {
+  'use strict';
+
+  const GROQ_MODEL    = 'llama-3.1-8b-instant';
+  const GROQ_ENDPOINT = 'https://api.groq.com/openai/v1/chat/completions';
+
+  const SYSTEM_PROMPT = `You are a professional AI assistant on Bhargav Patel's portfolio website. Answer questions about Bhargav concisely, warmly, and professionally. Only answer questions about Bhargav — politely redirect anything unrelated.
+
+## About Bhargav Patel
+Role: Full Stack .NET Developer — 14+ years enterprise experience
+Location: Brampton, Ontario, Canada
+Status: AVAILABLE for full-time, contract, or freelance opportunities
+Email: bhargavpp2017@gmail.com
+GitHub: github.com/BhargavPP
+LinkedIn: linkedin.com/in/bhargavpp
+
+## Impact Numbers
+- 2M+ daily financial transactions processed
+- 140+ manual processing hours eliminated per month
+- 1.5M+ daily API requests via Angular dashboards
+- 4,000+ medical reports transmitted daily (HL7 pipeline)
+- 14+ years of enterprise software delivery
+
+## Work Experience
+
+**Freelance Senior Developer** (Jan 2026–Present, Ontario)
+- Building SaaS app: Angular + ASP.NET Core, secure multi-tenant architecture
+- REST APIs with validation, error handling, clean separation of concerns
+- AI-assisted tooling to accelerate delivery
+
+**SOTI Inc. — Senior Software Developer** (Nov–Dec 2025, Mississauga ON)
+- Resolved critical bugs in shared internal .NET libraries
+- Root cause analysis across implementations and dependencies
+
+**OliveConcepts — Senior Full Stack .NET Developer** (Jul 2015–Sep 2020, India)
+- Led financial platforms: ASP.NET MVC, Entity Framework, SQL Server
+- 2M+ daily transactions, eliminated 140+ hours manual work per month
+- Secure REST APIs between ERP and banking systems (OAuth 2.0)
+- Angular dashboards: 1.5M+ daily requests
+- Audit and compliance modules
+
+**DRC Techno — Full Stack .NET Developer** (Sep 2010–Jul 2015, India)
+- Healthcare systems: .NET Web API, SQL Server, Angular
+- HL7 pipelines: 4,000+ medical reports per day, zero data loss
+- Patient portals, billing, real-time scheduling
+- Legacy to cloud migration
+
+## Technical Skills
+Languages: C#, TypeScript, JavaScript, SQL, LINQ, C/C++, ADO.NET
+Backend: .NET Core 8, ASP.NET MVC, Web API, Entity Framework, Dapper, REST APIs
+Frontend: Angular, ReactJS, HTML5, CSS3, Bootstrap, Kendo UI
+Cloud: Azure (App Services, Functions, Key Vault, API Management, Blob Storage), AWS (EC2, S3, Lambda)
+DevOps: Azure DevOps, GitHub Actions, Docker, Kubernetes, Jenkins, Terraform, Git
+Databases: MS SQL Server, PostgreSQL, MongoDB, Cosmos DB, Redis
+Messaging: RabbitMQ, Kafka, Azure Service Bus
+Monitoring: Serilog, NLog, App Insights, DataDog
+Testing: NUnit, xUnit, Jasmine, Karma, Postman, SSRS, Crystal Reports
+
+## GitHub Projects (github.com/BhargavPP)
+1. Demo1 — Clean REST API design, .NET Core, enterprise architecture
+2. Payroll System — Payroll engine, employee records, trend dashboards
+3. QuestionAnswer — Q&A platform with voting, tagging, accepted answers
+4. Vroom — Real-time vehicle dashboard (speed, RPM, fuel, temperature)
+5. Code — CSS design system and component library
+Total: 29 public repositories
+
+## Education & Certifications
+- Post Graduate Diploma, Business Management — Beta College, Canada (Dec 2026, in progress)
+- B.Tech, Information Technology — Veer Narmad South Gujarat University (2006–2010)
+- Microsoft Azure AI Fundamentals (AZ-900)
+- Agile/Scrum: 14+ years on Azure DevOps, Jira, Azure Boards
+
+## Response Rules
+- Be concise: 2–4 sentences for most answers, use bullet points for lists
+- Always be warm and enthusiastic about Bhargav's work
+- For hiring or contact questions always mention: bhargavpp2017@gmail.com or linkedin.com/in/bhargavpp
+- If you do not know something about Bhargav, say so and suggest contacting him directly
+- Never invent information not listed above
+- Do not answer questions unrelated to Bhargav — politely redirect`;
+
+  let isOpen  = false;
+  let isBusy  = false;
+  let history = [];
+  let apiKey  = '';
+
+  // ── INIT ──
+  function init() {
+    apiKey = GROQ_API_KEY || localStorage.getItem('bp_groq_key') || '';
+    if (apiKey) hideSetup();
+
+    setTimeout(() => {
+      if (!isOpen) {
+        const dot = document.getElementById('bp-chat-unread');
+        if (dot) dot.style.display = 'block';
+      }
+    }, 4000);
+  }
+
+  function hideSetup() {
+    const el = document.getElementById('bp-api-setup');
+    if (el) el.style.display = 'none';
+  }
+
+  // ── SAVE KEY ──
+  window.bpSaveKey = function () {
+    const input = document.getElementById('bp-api-key-input');
+    const val   = (input.value || '').trim();
+    if (!val.startsWith('gsk_')) {
+      input.style.borderColor = '#c84b00';
+      input.placeholder       = 'Groq keys start with gsk_...';
+      setTimeout(() => {
+        input.style.borderColor = '';
+        input.placeholder       = 'gsk_...';
+      }, 2500);
+      return;
+    }
+    apiKey = val;
+    localStorage.setItem('bp_groq_key', val);
+    hideSetup();
+  };
+
+  // ── TOGGLE ──
+  window.bpToggleChat = function () {
+    isOpen = !isOpen;
+    document.getElementById('bp-chat-window').classList.toggle('open', isOpen);
+    document.getElementById('bp-chat-btn').classList.toggle('open', isOpen);
+    const dot = document.getElementById('bp-chat-unread');
+    if (dot) dot.style.display = 'none';
+    if (isOpen) {
+      setTimeout(() => {
+        const inp = document.getElementById('bp-chat-input');
+        if (inp) inp.focus();
+      }, 250);
+    }
+  };
+
+  // ── HELPERS ──
+  window.bpAsk = function (text) {
+    const inp = document.getElementById('bp-chat-input');
+    if (inp) inp.value = text;
+    bpSendMessage();
+  };
+
+  window.bpHandleKey = function (e) {
+    if (e.key === 'Enter' && !e.shiftKey) {
+      e.preventDefault();
+      bpSendMessage();
+    }
+  };
+
+  window.bpAutoResize = function (el) {
+    el.style.height = 'auto';
+    el.style.height = Math.min(el.scrollHeight, 100) + 'px';
+  };
+
+  // ── SEND MESSAGE ──
+  window.bpSendMessage = async function () {
+    if (isBusy) return;
+    if (!apiKey) {
+      const setup = document.getElementById('bp-api-setup');
+      if (setup) setup.style.display = 'flex';
+      return;
+    }
+
+    const inputEl = document.getElementById('bp-chat-input');
+    const text    = (inputEl.value || '').trim();
+    if (!text) return;
+
+    inputEl.value        = '';
+    inputEl.style.height = 'auto';
+
+    appendMsg('user', text);
+    history.push({ role: 'user', content: text });
+
+    const typingEl = showTyping();
+    isBusy = true;
+    const sendBtn = document.getElementById('bp-chat-send');
+    if (sendBtn) sendBtn.disabled = true;
+
+    try {
+      const res = await fetch(GROQ_ENDPOINT, {
+        method: 'POST',
+        headers: {
+          'Content-Type':  'application/json',
+          'Authorization': `Bearer ${apiKey}`
+        },
+        body: JSON.stringify({
+          model:       GROQ_MODEL,
+          max_tokens:  600,
+          temperature: 0.7,
+          messages: [
+            { role: 'system', content: SYSTEM_PROMPT },
+            ...history
+          ]
+        })
+      });
+
+      const data = await res.json();
+
+      if (!res.ok) {
+        removeTyping(typingEl);
+        if (res.status === 401) {
+          appendMsg('bot', '⚠ Invalid API key. Please click the chat button, then re-enter your Groq key.');
+          localStorage.removeItem('bp_groq_key');
+          apiKey = '';
+        } else {
+          const errMsg = data?.error?.message || 'Request failed';
+          appendMsg('bot', `⚠ Error: ${errMsg}`);
+        }
+        return;
+      }
+
+      const reply = data.choices?.[0]?.message?.content
+        || "Sorry, I couldn't generate a response.";
+
+      history.push({ role: 'assistant', content: reply });
+      removeTyping(typingEl);
+      appendMsg('bot', reply);
+
+      // Cap history to last 20 messages to save tokens
+      if (history.length > 20) history = history.slice(-20);
+
+    } catch (err) {
+      removeTyping(typingEl);
+      appendMsg('bot', '⚠ Network error. Check your connection and try again.');
+    } finally {
+      isBusy = false;
+      if (sendBtn) sendBtn.disabled = false;
+      const inp = document.getElementById('bp-chat-input');
+      if (inp) inp.focus();
+    }
+  };
+
+  // ── DOM HELPERS ──
+  function appendMsg(role, text) {
+    const container = document.getElementById('bp-chat-messages');
+    const wrap      = document.createElement('div');
+    wrap.className  = `bp-msg ${role}`;
+
+    const avatar         = document.createElement('div');
+    avatar.className     = 'bp-msg-avatar';
+    avatar.textContent   = role === 'bot' ? 'BP' : 'You';
+
+    const bubble         = document.createElement('div');
+    bubble.className     = 'bp-msg-bubble';
+    bubble.innerHTML     = formatText(text);
+
+    wrap.appendChild(avatar);
+    wrap.appendChild(bubble);
+    container.appendChild(wrap);
+    container.scrollTop = container.scrollHeight;
+  }
+
+  function showTyping() {
+    const container = document.getElementById('bp-chat-messages');
+    const wrap      = document.createElement('div');
+    wrap.className  = 'bp-msg bot';
+    wrap.id         = 'bp-typing-indicator';
+
+    const avatar       = document.createElement('div');
+    avatar.className   = 'bp-msg-avatar';
+    avatar.textContent = 'BP';
+
+    const bubble     = document.createElement('div');
+    bubble.className = 'bp-typing-bubble';
+    bubble.innerHTML =
+      '<span class="bp-typing-dot"></span>' +
+      '<span class="bp-typing-dot"></span>' +
+      '<span class="bp-typing-dot"></span>';
+
+    wrap.appendChild(avatar);
+    wrap.appendChild(bubble);
+    container.appendChild(wrap);
+    container.scrollTop = container.scrollHeight;
+    return wrap;
+  }
+
+  function removeTyping(el) {
+    if (el && el.parentNode) el.parentNode.removeChild(el);
+  }
+
+  function formatText(raw) {
+    return raw
+      .replace(/&/g, '&amp;')
+      .replace(/</g, '&lt;')
+      .replace(/>/g, '&gt;')
+      .replace(/\*\*(.*?)\*\*/g, '<strong>$1</strong>')
+      .replace(/\*(.*?)\*/g, '<em>$1</em>')
+      .replace(/(https?:\/\/[^\s<]+)/g,
+        '<a href="$1" target="_blank" rel="noopener noreferrer">$1</a>')
+      .replace(/^[-•]\s(.+)$/gm, '<li>$1</li>')
+      .replace(/(<li>[\s\S]*?<\/li>)/g,
+        '<ul style="padding-left:1.1rem;margin:0.3rem 0">$1</ul>')
+      .replace(/\n\n+/g, '</p><p style="margin:0.4rem 0 0">')
+      .replace(/\n/g, '<br>')
+      .replace(/^/, '<p style="margin:0">')
+      .replace(/$/, '</p>');
+  }
+
+  // ── BOOT ──
+  if (document.readyState === 'loading') {
+    document.addEventListener('DOMContentLoaded', init);
+  } else {
+    init();
+  }
+
+})();
 </script>
 
 </body>
